@@ -21,7 +21,11 @@ describe('BookingsService (unit)', () => {
     });
 
     it('creates booking and sets CREATED status', async () => {
-        const b = await service.create({restaurantId: 'r1', datetime: new Date(), guests: 2});
+        const b = await service.create({
+            restaurantId: 'r1',
+            datetime: new Date(),
+            durationMinutes: 60,
+            guests: 2});
         expect(b.status).toBe('CREATED');
     });
 });
