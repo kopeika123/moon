@@ -12,6 +12,7 @@
 - Umzug — миграции
 - Jest + SQLite (in-memory) — тесты
 - Node v22.20.0
+- Swagger
 
 ## Запуск проекта
 
